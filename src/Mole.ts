@@ -36,7 +36,6 @@ class Mole{
 
     //显示
     show():void{
-         console.log("show1");
         if(this.isActive)return;
         this.isActive = true;
         this.isShow = true;
@@ -51,7 +50,6 @@ class Mole{
     //停留
     showComplete():void{
         if(this.show && !this.isHit) {
-            console.log("showComplete call");
             Laya.timer.once(2000,this,this.hide);
         }
     }
