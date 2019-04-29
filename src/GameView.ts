@@ -33,7 +33,7 @@ class GameView extends ui.GameUIUI{
         }
         this.hammer = new Hammer();
         this.addChild(this.hammer);
-        
+        this.hammer.start();
         Laya.timer.loop(1000,this,this.onLoop);
         
     }
@@ -53,6 +53,7 @@ class GameView extends ui.GameUIUI{
 
     gameOver(): void {
         Laya.timer.clear(this,this.onLoop);
+        this.hammer.end();
         console.log("游戏结束！！！！")
     }
 
