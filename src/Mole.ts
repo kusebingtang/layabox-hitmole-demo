@@ -13,6 +13,10 @@ class Mole{
     private isShow: boolean;        //地鼠是否处于显示状态
     private isHit: boolean;         //地鼠是否处于受击状态
 
+    private type:number;            //地鼠类型
+
+
+
     constructor(normalState:Laya.Image,hitState:Laya.Image,downY:number){
         this.normalState = normalState;
         this.hitState = hitState;
@@ -39,6 +43,11 @@ class Mole{
         if(this.isActive)return;
         this.isActive = true;
         this.isShow = true;
+       //随机地鼠类型
+        this.type = Math.random()<=0.3? 1 : 2;
+        this.normalState.skin="ui/mouse_normal_"+this.type+".png"
+        this.hitState.skin="ui/mouse_hit_"+this.type+".png"
+
         this.normalState.y = this.downY;
         this.normalState.visible = true;
         
