@@ -24,7 +24,8 @@ class GameView extends ui.GameUIUI{
 
             var normalState: Laya.Image =  box.getChildByName("normal") as Laya.Image;
             var hitState: Laya.Image = box.getChildByName("hit") as Laya.Image;
-            var mole = new Mole(normalState,hitState,21,hitCallBackHd);
+            var scoreState: Laya.Image = box.getChildByName("score") as Laya.Image;
+            var mole = new Mole(normalState,hitState,scoreState,21,hitCallBackHd);
 
             this.moles.push(mole);
         }

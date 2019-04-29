@@ -2,7 +2,7 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":50,
+    "selecteID":35,
     "props":{"width":800,"sceneColor":"#ffffff","height":600},
     "nodeParent":-1,
     "label":"View",
@@ -44,6 +44,7 @@
                     "props":{"x":6,"skin":"ui/mouse_normal_1.png","name":"normal"},
                     "nodeParent":6,
                     "label":"Image(normal)",
+                    "isOpen":true,
                     "isDirectory":false,
                     "isAniNode":true,
                     "hasChild":false,
@@ -76,6 +77,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":6,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":51,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -127,6 +140,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":7,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":52,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -178,6 +203,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":11,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":53,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -229,6 +266,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":15,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":54,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -280,6 +329,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":19,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":55,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -331,6 +392,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":23,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":56,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -382,6 +455,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":27,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":57,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -433,6 +518,18 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":31,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":58,
+                    "child":[
+                        ]
                 }]
         },
         {
@@ -448,6 +545,7 @@
             "compId":35,
             "child":[
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"x":6,"skin":"ui/mouse_normal_1.png","name":"normal"},
                     "nodeParent":35,
@@ -460,6 +558,7 @@
                         ]
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":85,"skin":"ui/mask-09.png"},
                     "nodeParent":35,
@@ -473,6 +572,7 @@
                     "$HIDDEN":false
                 },
                 {
+                    "x":30,
                     "type":"Image",
                     "props":{"y":14,"x":3,"skin":"ui/mouse_hit_1.png","name":"hit"},
                     "nodeParent":35,
@@ -484,6 +584,19 @@
                     "child":[
                         ],
                     "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Image",
+                    "props":{"y":0,"x":6,"skin":"ui/score_1.png","name":"score"},
+                    "nodeParent":35,
+                    "label":"Image(score)",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":59,
+                    "child":[
+                        ]
                 }]
         },
         {
