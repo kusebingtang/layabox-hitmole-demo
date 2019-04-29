@@ -17,3 +17,19 @@ module ui {
 
     }
 }
+
+module ui {
+    export class HammerUI extends View {
+		public hit:Laya.FrameAnimation;
+
+        public static  uiView:any ={"type":"View","props":{"width":100,"height":100},"child":[{"type":"Image","props":{"y":60,"x":56,"width":98,"skin":"ui/hammer.png","pivotY":49,"pivotX":55,"height":77},"compId":2}],"animations":[{"nodes":[{"target":2,"keyframes":{"y":[{"value":58,"tweenMethod":"linearNone","tween":true,"target":2,"key":"y","index":0}],"x":[{"value":60,"tweenMethod":"linearNone","tween":true,"target":2,"key":"x","index":0},{"value":58,"tweenMethod":"linearNone","tween":true,"target":2,"key":"x","index":1},{"value":60,"tweenMethod":"linearNone","tween":true,"target":2,"key":"x","index":5}],"rotation":[{"value":20,"tweenMethod":"linearNone","tween":true,"target":2,"key":"rotation","index":0},{"value":-20,"tweenMethod":"linearNone","tween":true,"target":2,"key":"rotation","index":1},{"value":20,"tweenMethod":"linearNone","tween":true,"target":2,"key":"rotation","index":5}]}}],"name":"hit","id":1,"frameRate":24,"action":0}]};
+        constructor(){ super()}
+        createChildren():void {
+        
+            super.createChildren();
+            this.createView(ui.HammerUI.uiView);
+
+        }
+
+    }
+}

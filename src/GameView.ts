@@ -8,6 +8,8 @@ class GameView extends ui.GameUIUI{
 
     private score:number;       //游戏得分
 
+    private hammer:Hammer;
+
     constructor(){
         super();
 
@@ -29,6 +31,9 @@ class GameView extends ui.GameUIUI{
 
             this.moles.push(mole);
         }
+        this.hammer = new Hammer();
+        this.addChild(this.hammer);
+        
         Laya.timer.loop(1000,this,this.onLoop);
         
     }
