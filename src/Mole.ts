@@ -9,6 +9,10 @@ class Mole{
     private upY: number;            //地鼠显示状态的最高坐标Y值。
     private downY: number;          //地鼠隐藏前的最低坐标Y值。
 
+    private scoreImg: Laya.Image;        //分数图片
+    private scoreY: number;              //分数图片的最高点y值。
+    private hitCallBackHd:Laya.Handler;  //受击回调函数处理器
+
     private isActive: boolean;      //当前地鼠是否已被激活
     private isShow: boolean;        //地鼠是否处于显示状态
     private isHit: boolean;         //地鼠是否处于受击状态
@@ -17,11 +21,13 @@ class Mole{
 
 
 
-    constructor(normalState:Laya.Image,hitState:Laya.Image,downY:number){
+    constructor(normalState:Laya.Image,hitState:Laya.Image,downY:number,hitCallBackHd:Laya.Handler){
         this.normalState = normalState;
         this.hitState = hitState;
         this.downY = downY;
         this.upY = this.normalState.y;
+
+        this.hitCallBackHd = hitCallBackHd;
         
         this.reset();
         this.normalState.on(Laya.Event.MOUSE_DOWN,this,this.hit);
@@ -82,6 +88,7 @@ class Mole{
             Laya.timer.clear(this,this.hide);
             this.normalState.visible = false;
             this.hitState.visible = true;
+            this.hitCallBackHd.runWith(this.type);
             Laya.timer.once(500,this,this.reset);
         }
     }
